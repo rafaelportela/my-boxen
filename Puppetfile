@@ -61,3 +61,4 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 github "zsh", "1.0.0"
 github "chrome", "1.1.2"
+github "android", "1.3.1", :repo => "rafaelportela/puppet-android"
