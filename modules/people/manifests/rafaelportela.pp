@@ -11,11 +11,4 @@ class people::rafaelportela {
   include android::platform_tools
   include android::tools
   android::system_image { "sysimg-20": }
-
-  package { 'Java8':
-    ensure => installed,
-    source => 'http://www.java.net/download/jdk8u20/archive/b23/binaries/jdk-8u20-ea-bin-b23-macosx-x86_64-15_jul_2014.dmg',
-    provider => pkgdmg,
-  }
-  
 }
