@@ -11,4 +11,7 @@ class people::rafaelportela {
   include android::platform_tools
   include android::tools
   android::system_image { "sysimg-20": }
+
+  include iterm2::dev
+  include iterm2::colors::solarized_light
 }
