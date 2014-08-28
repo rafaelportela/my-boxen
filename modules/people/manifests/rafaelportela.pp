@@ -23,4 +23,8 @@ class people::rafaelportela {
     ensure => installed,
     require => Package['scala'],
   }
+
+  package { 'couchdb':
+    ensure => 'installed',
+  }
 }
