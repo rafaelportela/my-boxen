@@ -27,4 +27,8 @@ class people::rafaelportela {
   package { 'couchdb':
     ensure => 'installed',
   }
+
+  package { 'mongodb':
+    ensure => 'installed',
+  }
 }
