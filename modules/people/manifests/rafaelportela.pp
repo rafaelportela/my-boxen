@@ -7,10 +7,6 @@ class people::rafaelportela {
   include people::rafaelportela::applications
 
   include zsh
-  include android::20
-  include android::platform_tools
-  include android::tools
-  android::system_image { "sysimg-20": }
 
   include iterm2::dev
   include iterm2::colors::solarized_light
@@ -30,5 +26,9 @@ class people::rafaelportela {
 
   package { 'mongodb':
     ensure => 'installed',
+  }
+
+  package { 'gradle':
+    ensure => 'installed'
   }
 }
