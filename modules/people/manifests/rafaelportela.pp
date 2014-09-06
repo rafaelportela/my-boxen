@@ -31,4 +31,8 @@ class people::rafaelportela {
   package { 'gradle':
     ensure => 'installed'
   }
+
+  package { 'awscli':
+    ensure => 'installed',
+  }
 }
