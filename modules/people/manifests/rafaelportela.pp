@@ -6,6 +6,18 @@ class people::rafaelportela {
   # load the following class
   include people::rafaelportela::applications
 
+  include osx::global::enable_standard_function_keys
+  include osx::dock::autohide
+  include osx::dock::clear_dock
+  include osx::no_network_dsstores
+  include osx::keyboard::capslock_to_control
+  class { 'osx::global::key_repeat_delay':
+    delay => 10
+  }
+  class { 'osx::global::key_repeat_rate':
+    rate => 2
+  }
+
   include zsh
 
   include iterm2::dev
