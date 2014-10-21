@@ -11,6 +11,8 @@ class people::rafaelportela {
   include iterm2::dev
   include iterm2::colors::solarized_light
 
+  include java
+
   package { 'scala':
     ensure => installed,
   }
