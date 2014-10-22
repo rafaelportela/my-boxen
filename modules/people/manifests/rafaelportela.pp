@@ -51,6 +51,10 @@ class people::rafaelportela {
     ensure => 'installed',
   }
 
+  package { 'maven':
+    ensure => 'installed'
+  }
+
   package { 'gradle':
     ensure => 'installed'
   }
