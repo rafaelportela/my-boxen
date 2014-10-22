@@ -3,6 +3,7 @@ class people::rafaelportela::applications {
   include chrome
   include alfred
   include evernote
+  include virtualbox
 
   class { 'intellij':
     edition => 'ultimate',
