@@ -43,6 +43,10 @@ class people::rafaelportela {
     require => Package['scala'],
   }
 
+  package { 'elixir':
+    ensure => installed,
+  }
+
   package { 'couchdb':
     ensure => 'installed',
   }
