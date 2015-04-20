@@ -64,9 +64,8 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
+  nodejs::version { 'v0.10': }
+  nodejs::version { 'v0.12': }
 
   # custom modules
   # include osx
